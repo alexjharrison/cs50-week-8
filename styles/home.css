@@ -1,0 +1,23 @@
+.main-header {
+  background-image: url("/images/me.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-origin: unset;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header h1 {
+  font-size: 5em;
+}
+
+.see-more-heading {
+  text-align: center;
+  margin: 1.5em 0;
+  font-size: 3em;
+}
+
+.see-more-heading .card-img-top {
+  height: 50px;
+}

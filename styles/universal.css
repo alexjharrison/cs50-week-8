@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2em;
+  border-top: 1px solid #ccc;
+}
+footer > p {
+  margin: 0;
+}
