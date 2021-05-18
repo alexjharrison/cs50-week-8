@@ -1,11 +1,10 @@
-import { reactive } from "./reactivity.js";
-import { h1, text } from "./test.js";
-
-// Watch form input
-
-console.log(text);
-console.log(h1);
-
-// const h2 = document.createElement("h2");
-// h2.innerText = "h2 text";
-// document.querySelector("body").append(h2);
+fetch("https://randomuser.me/api/?nat=us&inc=name,location,picture&results=3")
+  .then((res) => res.json())
+  .then(({ results }) => {
+    const users = results.map((user) => ({
+      name: `${user.name.first} ${user.name.last}`,
+      address: `${user.location.city}, ${user.location.state}`,
+      picture: user.picture.large,
+    }));
+    console.log(users);
+  });
