@@ -1,0 +1,19 @@
+#bike {
+  top: 140px;
+  left: calc(100% - 60px);
+  height: 60px;
+  width: 60px;
+  transition: left 0.01s ease-out;
+}
+
+section {
+  height: 800px;
+}
+
+.reverse {
+  transform: rotateY(180deg);
+}
+
+img {
+  max-width: 100%;
+}

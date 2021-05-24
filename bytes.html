@@ -56,8 +56,49 @@
       </nav>
     </header>
 
-    <main class="container-lg">
-      <h1>Bytes</h1>
+    <main class="container-lg d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-between py-2">
+        <h1 class="m-0">Bytes</h1>
+        <p class="my-0 mx-auto h3">Conways Game of Life</p>
+      </div>
+      <div class="row justify-content-between g-0 mb-2">
+        <form class="col-sm-4 speed" >
+          <label for="speed">Simulation Speed</label>
+          <div class="d-flex">
+            <input id="speed" type="range" class="form-range" min="0" max="20" step=".5"/>
+            <small class="col-3 text-center"></small>
+          </div>
+        </form>
+        <form class="col-sm-4 density" >
+          <label for="density">Grid Density</label>
+          <div class="d-flex">
+            <input
+              id="density"
+              type="range"
+              class="form-range"
+              min="1"
+              max="30"
+              step="1"
+            />
+            <small class="col-3 text-center"></small>
+          </div>
+        </form>
+        <form class="col-sm-4 starting">
+          <label for="starting">Starting Amount</label>
+          <div class="d-flex">
+            <input
+              id="starting"
+              type="range"
+              class="form-range"
+              min="1"
+              max="99"
+              step="1"
+            />
+            <small class="col-3 text-center"></small>
+          </div>
+        </div>
+      </div>
+      <div id="grid" class="h-100 bg-primary flex-grow-1"></div>
     </main>
 
     <footer>
