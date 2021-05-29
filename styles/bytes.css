@@ -1,3 +1,17 @@
 .form-range {
   width: 90%;
 }
+
+#grid {
+  opacity: 0;
+}
+
+.tile {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 1px;
+}
+
+.tile.alive {
+  background-color: white;
+}
