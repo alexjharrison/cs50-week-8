@@ -63,14 +63,21 @@
         <button id="reset-btn" class="btn btn-primary btn-sm">restart</button>
       </div>
       <div class="row justify-content-between g-0 mb-2">
-        <form class="col-sm-4 speed" >
+        <form class="col-sm-4 speed">
           <label for="speed">Simulation Speed</label>
           <div class="d-flex">
-            <input id="speed" type="range" class="form-range" min="0" max="20" step=".5"/>
+            <input
+              id="speed"
+              type="range"
+              class="form-range"
+              min="0"
+              max="20"
+              step=".5"
+            />
             <small class="col-3 text-center"></small>
           </div>
         </form>
-        <form class="col-sm-4 density" >
+        <form class="col-sm-4 density">
           <label for="density">Grid Density</label>
           <div class="d-flex">
             <input
@@ -97,9 +104,12 @@
             />
             <small class="col-3 text-center"></small>
           </div>
-        </div>
+        </form>
       </div>
-      <div id="grid" class="h-100 flex-grow-1 d-flex flex-wrap align-content-start"></div>
+      <div
+        id="grid"
+        class="h-100 flex-grow-1 d-flex flex-wrap align-content-start"
+      ></div>
     </main>
 
     <footer>
